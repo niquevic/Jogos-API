@@ -1,0 +1,24 @@
+info:
+  name: Cadastrar jogos
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/jogos
+  body:
+    type: json
+    data: |-
+      {
+        "id_genero": 1,
+        "nome":"BanG Dream! Girls Band Party!",
+        "desenvolvedora":"Bushiroad",
+        "sinopse":"No papel de um funcionário de uma casa de shows local, o jogador tem a missão de recrutar, gerenciar e promover diversas bandas de garotas. O jogo mescla histórias em formato de romance visual com apresentações rítmicas de músicas originais e covers famosos de animes de sucesso."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

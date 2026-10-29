@@ -1,0 +1,22 @@
+info:
+  name: Cadastrar generos
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/generos
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Jogo de Ritmo",
+        "descricao": "Gênero de videogame que desafia a coordenação do jogador por meio do acionamento de comandos (toques, movimentos ou retenções de notas na tela) no ritmo exato de uma trilha sonora musical de fundo."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
